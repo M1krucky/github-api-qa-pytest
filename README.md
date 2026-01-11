@@ -1,8 +1,8 @@
-# GitHub API PyTest Automation
+## GitHub API PyTest Automation
 
-Portfolio-style API test automation framework built with Python + PyTest + requests using the real GitHub REST API (no mock services).
+### Portfolio-style API test automation framework built with Python + PyTest + requests using the real GitHub REST API (no mock services). 
 
-What’s included (current):
+#### What’s included (current):
 
 - API client wrapper (src/api_client.py) with shared requests.Session, base URL, and timeout
 - Config via environment variables:
@@ -15,7 +15,7 @@ What’s included (current):
   - GET /search/repositories (query params + basic business validation)
 - Markers configured in pytest.ini: smoke, positive, negative
 
-How to run:
+#### How to run:
 
 1. Create and activate a virtual environment
 2. Install dependencies:
@@ -27,7 +27,7 @@ How to run:
 4. Run tests:
    pytest -q
 
-Roadmap (next pushes):
+### Roadmap (next pushes):
 
 - Expand negative coverage (auth errors, not-found, validation errors)
 - Add parametrization for scalable endpoint coverage
