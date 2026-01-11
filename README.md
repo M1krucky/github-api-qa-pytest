@@ -27,7 +27,7 @@ How to run:
 4. Run tests:
    pytest -q
 
-Roadmap (next pushes)
+Roadmap (next pushes):
 
 - Expand negative coverage (auth errors, not-found, validation errors)
 - Add parametrization for scalable endpoint coverage
