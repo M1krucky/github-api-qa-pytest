@@ -4,12 +4,13 @@ import pytest
 
 
 @pytest.mark.positive
-def test_search_repositories_by_keyword(api_client):
+@pytest.mark.parametrize("keyword", ["pytest", "requests", "selenium"])
+def test_search_repositories_by_keyword(api_client, keyword):
     """
     Verify GitHub repository search endpoint returns
     a list of repositories for a given keyword.
     """
-    params = {"q": "pytest"}
+    params = {"q": keyword}
 
     response = api_client.get("/search/repositories", params=params)
 
@@ -22,4 +23,5 @@ def test_search_repositories_by_keyword(api_client):
     assert len(data["items"]) > 0
 
     names = [repo["name"].lower() for repo in data["items"]]
-    assert any("pytest" in name for name in names)
+    assert any(keyword.lower() in name for name in names)
+
