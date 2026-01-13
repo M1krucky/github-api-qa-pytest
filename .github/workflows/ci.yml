@@ -27,4 +27,4 @@ jobs:
           API_BASE_URL: https://api.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pytest -q
+          pytest -q --junitxml=reports/junit.xml
