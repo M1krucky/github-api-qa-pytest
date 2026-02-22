@@ -2,8 +2,9 @@
 
 ![CI](https://github.com/M1krucky/github-api-qa-pytest/actions/workflows/ci.yml/badge.svg)
 
-Professional API test automation framework built with **Python**, **PyTest**, and **requests** against the **real GitHub REST API** (no mock services).  
-Designed as a **portfolio-grade QA Automation project** with CI, reporting, and real-world workflow.
+Professional API test automation framework built with Python, Pytest, and the requests library against the public GitHub REST API (no mock services).
+
+Designed as a portfolio-grade QA Automation project demonstrating real-world API testing workflows, CI integration, and production-style test architecture.
 
 ---
 
